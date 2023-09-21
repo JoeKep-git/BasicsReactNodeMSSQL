@@ -23,3 +23,17 @@ To run the server ensure docker is updated with the files and in docker desktop,
 Use this command if you have updated the source files to ensure the images are updated. If you delete the database container then the database will be reset each time.
 
 ## **You will still need to import MSSQL into the NodeJS file to query the database in NodeJS**
+
+## Do this to get the container running
+
+In docker desktop go to your images. Here you will see that it has created 2 images named `my-app-docker-api` and `my-app-docker-client`. 
+
+Click on the run button then expand the optional settings and set the port for the api container to `8000` and the port for the client container to `3000`.
+
+The container on port `8000` is the NodeJS server and the container on port `3000` is ReactJS.
+
+## Get Database up and running
+
+Once the commands are done all you need to do to access the database is run the container that has already been created and then use what you would like to access the MSSQL server.
+
+For example, with SQL Server Management Studio you would type `127.0.0.1,1433` for the SQL server. User would be SA (system administrator) and the password would be what you changed it to.
