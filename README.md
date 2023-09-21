@@ -19,7 +19,7 @@ This command will remove the containers which is useful when changes are done.
 
 To run the server ensure docker is updated with the files and in docker desktop, in images, click the run icon and type the correct port and run it. This will need to be done for both REACT front end and NodeJS backend.
 
-## `docker-compose build` `docker-compose up build`
+## `docker-compose build` `docker-compose up --build`
 Use this command if you have updated the source files to ensure the images are updated. If you delete the database container then the database will be reset each time.
 
 ## **You will still need to import MSSQL into the NodeJS file to query the database in NodeJS**
