@@ -17,3 +17,5 @@ This command will run the two docker files that then put React on the 3000 port 
 This command will remove the containers which is useful when changes are done.
 
 To run the server ensure docker is updated with the files and in docker desktop, in images, click the run icon and type the correct port and run it. This will need to be done for both REACT front end and NodeJS backend.
+
+#You will still need to import MSSQL into the NodeJS file to query the database in NodeJS
